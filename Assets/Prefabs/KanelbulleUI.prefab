@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1180457448388498249}
   - component: {fileID: 2476915811501046267}
   m_Layer: 5
-  m_Name: LoadLevelButton
+  m_Name: TestButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -465,7 +465,7 @@ GameObject:
   - component: {fileID: 4545790765060207186}
   - component: {fileID: 2318932222719854969}
   m_Layer: 5
-  m_Name: PlayerNameInputField
+  m_Name: InputField (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1391,7 +1391,7 @@ GameObject:
   - component: {fileID: 5331672697208283269}
   - component: {fileID: 4429905158875813413}
   m_Layer: 5
-  m_Name: BakeButton
+  m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1522,7 +1522,7 @@ GameObject:
   - component: {fileID: 21147699456982967}
   - component: {fileID: 1984347701556528649}
   m_Layer: 5
-  m_Name: GenerateToggle
+  m_Name: Toggle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
