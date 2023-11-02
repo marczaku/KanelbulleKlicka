@@ -12,6 +12,9 @@ public class Kanelbulle : MonoBehaviour
     private string playerName;
     private bool generateKanelbullar;
 
+    public GameController GameController;
+    public OldGameController OldGameController;
+
     void Start()
     {
         this.kanelbullar = PlayerPrefs.GetInt("amount", 10);
