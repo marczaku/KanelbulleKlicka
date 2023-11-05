@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class OldGameController : MonoBehaviour
 {
+    public int timeLeft;
+
+    public void RestartGame()
+    {
+        
+    }
+    
     // Start is called before the first frame update
     void Start()
     {

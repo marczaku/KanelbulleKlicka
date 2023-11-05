@@ -1,14 +1,13 @@
 using System;
+using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class Kanelbulle : MonoBehaviour
 {
-    public UnityEvent<int> KanelbullarChanged;
-    public UnityEvent<string> KanelbullarTextChanged;
     public UnityEvent<string> PlayerNameChanged;
     public UnityEvent<bool> GenerateKanelbullarChanged;
-    private int kanelbullar;
+    public IntVariable Count;
     private string playerName;
     private bool generateKanelbullar;
 
@@ -17,24 +16,20 @@ public class Kanelbulle : MonoBehaviour
 
     void Start()
     {
-        this.kanelbullar = PlayerPrefs.GetInt("amount", 10);
+        this.Count.SetValue(PlayerPrefs.GetInt("amount", 10));
         this.playerName = PlayerPrefs.GetString("playerName", "Unnamed");
         int generateInt = PlayerPrefs.GetInt("generate", 0);
         this.generateKanelbullar = generateInt != 0;
 
-        KanelbullarChanged.Invoke(this.kanelbullar); // 0
-        KanelbullarTextChanged.Invoke(this.kanelbullar.ToString());
         PlayerNameChanged.Invoke(this.playerName);
         GenerateKanelbullarChanged.Invoke(this.generateKanelbullar);
     }
     
     public void IncreaseKanelbullar()
     {
-        kanelbullar++;
-        KanelbullarChanged.Invoke(this.kanelbullar); // 1
-        KanelbullarTextChanged.Invoke(this.kanelbullar.ToString());
-
-        PlayerPrefs.SetInt("amount", kanelbullar);
+        Count.SetValue(Count.GetValue()+1);
+        Count.ValueChanged.Invoke(50);
+        PlayerPrefs.SetInt("amount", Count.GetValue());
     }
 
     public void SetPlayerName(string name)

@@ -651,6 +651,7 @@ GameObject:
   - component: {fileID: 2983283306549783307}
   - component: {fileID: 5301595451086380885}
   - component: {fileID: 6570703149949330222}
+  - component: {fileID: 1021444197774390564}
   m_Layer: 5
   m_Name: KanelbulleUI
   m_TagString: Untagged
@@ -746,6 +747,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1021444197774390564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3727378218035932925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 358de13b9f4b4224bba602f01953149c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: {fileID: 6851863222412262078}
+  KanelbullarCount: {fileID: 11400000, guid: c6eea2475a7074d2b89627dd35f5ae76, type: 2}
 --- !u!1 &3886633800822187637
 GameObject:
   m_ObjectHideFlags: 0

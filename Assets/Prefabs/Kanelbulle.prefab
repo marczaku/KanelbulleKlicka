@@ -44,24 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01b6470a37d2492c90503849bf49bdf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KanelbullarChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  KanelbullarTextChanged:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
-        m_MethodName: set_text
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   PlayerNameChanged:
     m_PersistentCalls:
       m_Calls:
@@ -92,3 +74,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  Count: {fileID: 11400000, guid: c6eea2475a7074d2b89627dd35f5ae76, type: 2}
+  GameController: {fileID: 11400000, guid: ad8c897bd9d534fe7896b4f782388be1, type: 2}
+  OldGameController: {fileID: 0}
