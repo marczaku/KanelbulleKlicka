@@ -1,8 +1,17 @@
 using UnityEngine;
 
+
 public class Player : MonoBehaviour
 {
-    void RestartGame()
+    bool TryGetPosition(out Vector3 position)
     {
+        position = Vector3.zero;
+        return true;
+    }
+    
+    public Transform target;
+    void Start()
+    {
+        TryGetPosition(out Vector3 result);
     }
 }

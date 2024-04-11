@@ -75,10 +75,10 @@ If unsure, use the Mentoring Time to find out, whether your chosen solution qual
 
 ### Tuesday: Workshop on Optimization Patterns in Unity (6h)
 
-- Flyweight
 - Object Pool
-- Spatial Partition
+- Flyweight
 - Dirty Flag
+- Spatial Partition
 
 ### Wednesday: MVP Design Patterns (6h)
 
